@@ -20,10 +20,10 @@
     <?php
     foreach ($films as $film) { ?>
 
-        <h2> <?php echo $film->name ?> </h2>
-        <h3> <?php echo $film->genre ?> </h3>
-        <h3> <?php echo $film->year ?> </h3>
-        <p> <?php echo $film->descriptions ?> </p>
+        <h2> Titolo : <?php echo $film->name ?> </h2>
+        <h3> Genere: <?php echo $film->genre ?> </h3>
+        <h3> Anno di uscita : <?php echo $film->year ?> </h3>
+        <p> <strong>Descrizione :</strong> <br> <?php echo $film->descriptions ?> </p>
         <h2> Prezzo : <?php echo $film->price ?> € </h2>
         <?php
         if ($film->age > 29) { ?>
